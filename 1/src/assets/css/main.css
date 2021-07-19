@@ -1,0 +1,354 @@
+@font-face {
+    font-family: regularFont;
+    src: url("../fonts/Aeonik/Aeonik-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: lightFont;
+    src: url("../fonts/Aeonik/Aeonik-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: thinFont;
+    src: url("../fonts/Aeonik/Aeonik-Thin.otf") format("opentype");
+}
+
+*{
+	margin: 0;
+}
+
+body{
+	background: #143129;
+	overflow: hidden;
+}
+
+.rotate-top-right{
+	position: absolute;
+	width: 630px;
+	height: 120px;
+	top: -10px;
+	right: -220px;
+	transform: rotate(-35deg);
+	background: #183930;
+	z-index: 1;
+}
+
+.rotate-top-right-2{
+	position: absolute;
+	width: 430px;
+	height: 120px;
+	top: 280px;
+	right: -220px;
+	transform: rotate(-35deg);
+	background: #183930;
+	z-index: 1;
+}
+
+.rotate-bottom{
+	position: absolute;
+	width: 430px;
+	height: 120px;
+	bottom: 170px;
+	right: 150px;
+	transform: rotate(12deg);
+	background: #183930;
+	z-index: 1;
+}
+
+.rotate-left{
+	position: absolute;
+	width: 430px;
+	height: 120px;
+	bottom: 120px;
+	left: -40px;
+	transform: rotate(-25deg);
+	background: #183930;
+	z-index: 1;
+}
+
+.rotate-bottom-extra{
+	position: absolute;
+	width: 230px;
+	height: 120px;
+	bottom: -120px;
+	left: 200px;
+	transform: rotate(-25deg);
+	background: #183930;
+	z-index: 1;
+}
+
+header{
+	width: 100%;
+	height: 150px;
+	position: relative;
+	background: transparent;
+	z-index: 2;
+}
+
+.navbar{
+	width: inherit;
+
+}
+
+.logo{
+	position: relative;
+	left: 50px;
+	top: 30px;
+	width: 150px;
+	height: 50px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.log img{
+	width: 50px;
+	height: 50px;
+}
+
+.nav{
+	position: absolute;
+	top: 30px;
+	right: 20px;
+	width: 280px;
+	height: auto;
+	display: flex;
+}
+
+.nav li{
+	text-align: center;
+	list-style: none;
+	height: 50px;
+	padding-top: 0px;
+	padding-bottom: 20px;
+	margin-right: 20px;
+	/*float: left;*/ 
+}
+
+.nav li:hover{
+	background: rgba(255, 255, 255, .1);
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.nav li a{
+	margin: 0px 20px;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	font-family: lightFont;
+	text-transform: ;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+.nav li a img{
+	position: relative;
+	width: 50px;
+	height: auto;
+	top: 0px;
+	left: -10px;
+}
+
+.nav li a span{
+	position: relative;
+	width: 50px;
+	height: auto;
+	top: 0px;
+	left: 10px;
+}
+
+.text-content{
+	position: absolute;
+	top: 390px;
+	left: 50px;
+	/*background: rgba(255, 255, 255, .1);*/
+	width: 300px;
+	z-index: 2;
+}
+
+.text-content h2{
+	position: relative;
+	font-family: regularFont;
+	font-size: 30px;
+	font-weight: 100;
+	color: #fff;
+}
+
+.line{
+	position: relative;
+	width: 70px;
+    height: 5px;
+    background: #4CAF50;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.btw{
+	position: relative;
+	font-family: lightFont;
+	font-size: 15px;
+	color: #fff;
+	font-weight: 50;
+}
+
+.cta{
+	position: relative;
+	margin-top: 40px;
+}
+
+.cta div{
+	color: #fff;
+	font-family: regularFont;
+	line-height: 1.5;
+	cursor: pointer;
+	padding: 10px 20px;
+	border: 2px solid #fff;
+	width: 180px;
+	height: 20px;
+	font-size: 12px;
+	border-radius: 0px;
+	background: transparent;
+	transition: all .3s ease;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.cta div:hover{
+	background: rgba(14, 28, 20, .5);	
+}
+
+.cta div:active{
+	background: #0b2215;	
+}
+
+.client{
+	position: absolute;
+	top: 100px;
+	right: 0px;
+	/*background: rgba(0,0,0,.1);*/
+	width: 520px;
+	height: 500px;
+	z-index: 3;
+}
+
+.client img{
+	width: 520px;
+}
+
+.credit-card{
+    position: absolute;
+    top: 171px;
+    left: 100px;
+    width: 308px;
+    height: 210px;
+    background: linear-gradient(to right, #749088 10%, #75c0ab 100%);
+    background: linear-gradient(to right, #487568 10%, #58a791 100%);
+    border-radius: 15px;
+    z-index: 2;
+   	overflow: hidden;
+}
+
+.fit{
+    left: 237px;
+    transform: rotate(44.5deg);
+}
+
+.credit-card .logo{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 180px;
+	height: 20px;
+	z-index: 2;
+	/*background: rgba(0,0,0,.4);*/
+}
+
+.credit-card .logo img{
+	width: inherit;
+	opacity: .8;
+}
+
+.credit-card .chip{
+	position: absolute;
+	top: 60px;
+	left: 34px;
+	width: 50px;
+	height: 20px;
+	z-index: 2;
+	/*background: rgba(0,0,0,.4);*/
+}
+
+.credit-card .chip img{
+	width: inherit;
+}
+
+.credit-card .number{
+    position: absolute;
+    top: 110px;
+    /* left: 40px; */
+    width: inherit;
+    text-align: center;
+    font-family: regularFont;
+    font-size: 22px;
+    color: #ffffffbf;
+    z-index: 2;
+}
+
+.credit-card .number2{
+	position: absolute;
+	top: 135px;
+	left: 38px;
+	width: inherit;
+	text-align: left;
+	font-size: 14px;
+	font-family: thinFont;
+	font-weight: bold;
+    color: #ffffffbf;
+	z-index: 2;
+}
+
+
+.credit-card .name{
+	position: absolute;
+	top: 170px;
+	left: 38px;
+	text-align: left;
+	font-size: 18px;
+	color: #ffffffdb;
+	font-family: regularFont;
+	text-transform: uppercase;
+	z-index: 2;
+}
+
+/* card extras */
+.horizontal{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 180px;
+	height: 80px;
+	background: #518576;
+	z-index: 1;
+}
+
+.rotated-down{
+	position: absolute;
+	top: 40px;
+	left: 145px;
+	width: 230px;
+	height: 80px;
+    background: linear-gradient(to right, #518576 10%, #55a38d 90%);
+	z-index: 1;
+    transform: rotate(24.5deg);
+}
+
+.rotated-down-top{
+    position: absolute;
+    top: -49px;
+    left: 145px;
+    width: 230px;
+    height: 80px;
+    background: #529884;
+    z-index: 1;
+    transform: rotate(24.5deg);
+}
